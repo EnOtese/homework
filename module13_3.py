@@ -14,7 +14,7 @@ async def start(message: types.Message):
     await message.answer(text='Привет! Я бот помогающий твоему здоровью.')
 
 
-@dp.message(lambda message: message == "Urban")
+@dp.message(lambda message: message.text == "Urban")
 async def urban_message(message):
     print("Urban message")
 
