@@ -1,14 +1,14 @@
+# aiogram 3.15.0
 from aiogram import Bot, Dispatcher, types
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.filters.state import State, StatesGroup, StateFilter
 import asyncio
-
+# aiogram 3.15.0
 API = "API"
 bot = Bot(token=API)
 dp = Dispatcher(storage=MemoryStorage())
-
 users = set()
 
 
@@ -66,3 +66,7 @@ async def all_message(message: types.Message):
 
 if __name__ == "__main__":
     asyncio.run(dp.start_polling(bot))
+
+# aiogram 3.15.0
+
+
