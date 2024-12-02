@@ -23,5 +23,11 @@ cursor.execute("UPDATE Users SET balance = ? WHERE id %2 != ?", (500, 0))
 
 cursor.execute("DELETE FROM Users WHERE (id-1) %3 = ?", (0, ))
 
+cursor.execute("SELECT username, email, age, balance FROM Users WHERE age != 60")
+
+users = cursor.fetchall()
+for user, email, age, balance in users:
+    print(f"Имя: {user} | Почта: {email} | Возраст: {age} | Баланс: {balance}")
+
 connection.commit()
 connection.close()
