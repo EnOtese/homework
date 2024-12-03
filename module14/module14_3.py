@@ -25,7 +25,7 @@ ibutton1 = InlineKeyboardButton(text='Product1', callback_data='product_buying')
 ibutton2 = InlineKeyboardButton(text='Product2', callback_data='product_buying')
 ibutton3 = InlineKeyboardButton(text='Product3', callback_data='product_buying')
 ibutton4 = InlineKeyboardButton(text='Product4', callback_data='product_buying')
-ikb.add(ibutton1, ibutton2, ibutton3, ibutton4, mibutton2, mibutton)
+ikb.add(ibutton1, ibutton2, ibutton3, ibutton4)
 
 users = set()
 
