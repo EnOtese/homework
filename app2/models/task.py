@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from app2.models import *
 
+
 class Task(Base):
     __tablename__ = 'tasks'
     id = Column(Integer, primary_key=True, index=True)

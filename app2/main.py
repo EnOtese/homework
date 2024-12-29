@@ -4,7 +4,7 @@ from app2.routers import task, user
 app = FastAPI()
 
 
-# python -m uvicorn app2.main:app2
+# python -m uvicorn app2.main:app
 
 @app.get('/')
 async def welcome():
