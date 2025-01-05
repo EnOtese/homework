@@ -1,0 +1,12 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %}<h1>Игры</h1>{% endblock %}
+
+{% block content %}
+    <ul>
+        <li>Atomic Heart <button>Купить</button></li>
+        <li>Cyberpunk 2077 <button>Купить</button></li>
+        <li>PayDay 2 <button>Купить</button></li>
+    </ul>
+    <button><a href="{% url 'platform' %}">Вернуться обратно</a></button>
+{% endblock %}
