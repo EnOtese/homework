@@ -1,7 +1,7 @@
-from app2.backend.db import Base
+from app3.backend.db import Base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
-from app2.models.task import Task
+from app3.models.task import Task
 
 
 class User(Base):
