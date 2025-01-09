@@ -1,7 +1,14 @@
-from fastapi import APIRouter
-from app2.models import *
+from fastapi import APIRouter, Depends, status, HTTPException
+from sqlalchemy.orm import Session
+from app3.backend.db_depends import get_db
+from typing import Annotated
+from app3.models import Task
+from app3.schemas import CreateTask, UpdateTask
+from sqlalchemy import insert, select, update, delete
+from slugify import slugify
 
-
+from app3.models import *
+from sqlalchemy import insert
 router = APIRouter(prefix='/task', tags=['task'])
 
 

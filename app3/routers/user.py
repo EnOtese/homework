@@ -1,15 +1,15 @@
 from fastapi import APIRouter, Depends, status, HTTPException
 from sqlalchemy.orm import Session
-from app2.backend.db_depends import get_db
+from app3.backend.db_depends import get_db
 from typing import Annotated
-from app2.models import User
-from app2.schemas import CreateUser, UpdateUser
+from app3.models import User
+from app3.schemas import CreateUser, UpdateUser
 from sqlalchemy import insert, select, update, delete
 from slugify import slugify
 
-from app2.models import *
+from app3.models import *
 from sqlalchemy import insert
-from app2.schemas import CreateUser
+from app3.schemas import CreateUser
 
 
 router = APIRouter(prefix='/user', tags=['user'])
